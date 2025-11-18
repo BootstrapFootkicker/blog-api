@@ -1,12 +1,14 @@
 {
-  "name": "express-boilerplate",
+  "name": "blog-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "api/app.js",
   "scripts": {
-    "start": "node bin/www",
-    "dev": "nodemon bin/www",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./api/bin/www.js",
+    "dev": "nodemon ./api/bin/www.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev"
   },
   "keywords": [],
   "author": "",
